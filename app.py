@@ -4,8 +4,8 @@ import torch
 
 def answer_question(context, question):
     # Load the trained model and tokenizer
-    model = BertForQuestionAnswering.from_pretrained('trained_model')
-    tokenizer = BertTokenizer.from_pretrained('trained_model')
+    model = BertForQuestionAnswering.from_pretrained('train_model')
+    tokenizer = BertTokenizer.from_pretrained('train_model')
 
     # Tokenize question and context
     inputs = tokenizer.encode_plus(question, context, add_special_tokens=True, return_tensors="pt")
