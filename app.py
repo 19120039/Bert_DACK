@@ -31,6 +31,15 @@ def answer_question(context, question):
 def main():
     st.title("Question Answering Demo")
 
+    
+    # Add author line
+    st.markdown("<br>", unsafe_allow_html=True)
+    st.markdown("**Author**: Phan Minh Triết - 19120039")
+    st.markdown("**Author**: Trần Đức Thụy - 19120138")
+
+    # Add note
+    st.markdown("<br>", unsafe_allow_html=True)
+    st.markdown("Note: Mô hình sử dụng là BERT-based train trên tập dữ liệu SQUAD v2.0.")
     # Input question and context
     question = st.text_input("Enter your question:")
     context = st.text_area("Enter the context:")
