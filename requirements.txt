@@ -1,3 +1,4 @@
+streamlit==1.23.1
 albumentations==1.2.1
 coremltools==6.3.0
 matplotlib==3.7.1
